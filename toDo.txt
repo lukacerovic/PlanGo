@@ -1,0 +1,38 @@
+Treba da se napravimSEARCH IMAGES FOR ATTRACTIONS
+
+
+To treba da se napravi endpoint na backendu koji ce da prima place_name i place_attractions
+
+Potom treba da se pozove neka zasebna helper funkcija koja ce da proveri da li u tabeli 
+attraction_images
+
+Da li u toj tabeli postoje atrakcije za dati place_name
+
+
+ako nema, onda treba da se za svaku atrakciju pozove unsplash poziv i da se dohvate slike za svaku od njih.
+Nakon sto se dohvate te slike treba da se ubace u tabelu attraction_images i da se potom iz tog endpointa vrati lista atrakcija gde ce svaka imati:
+name, lat, long, category i img 
+
+(dakle ako dobijes u rikvestu za place_attractions kao listu objekata gde svaki ima lat, long, name i category onda samo treba da se svakom od njih doda i img vrednost i da se takva lista vrati)
+
+
+Ako funkcija nadje rezultat u attraction_images za dati place_name onda samo treba da vrati listu slika atrakcija za tu destinaciju
+
+
+
+
+Nakon toga mi ostaje da popravim JWT token za remember me da radi
+
+
+Treba da se prebaci na sql sve, dakle da se koristi neka sql baza
+
+
+
+Treba da se ubaci da edit i order edit svake tacke radi i da se updatuje rezultat na osnovu toga
+
+
+treba da se settings sekcija namesti da se promene pamte (brisanje naloga, menjanje emaila i sifre)
+
+
+
+Nakon toga, kao bonus, moze da se vidi za NLP mrezu da se ubaci koja ce da recomenduje attrakcije za datog korisnika
